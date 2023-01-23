@@ -78,7 +78,7 @@
     	    <repository>
         	<id>central</id>
         	<name>ip-172-31-3-61.ap-south-1.compute.internal-releases</name>
-        	<url>http://15.207.64.68:8081/artifactory/libs-release</url>
+        	<url>http://15.207.64.68:8082/artifactory/libs-release</url>
     	    </repository>
 	</distributionManagement>
 
