@@ -13,4 +13,4 @@
       shell: echo admin | sudo -S chmod 777 /opt/ci-cd-files
     
     - name: copy the files from ansible server to clients machine
-      copy: src=/opt/ dest=/opt/ci-cd-files
+      copy: src=/opt/ dest=/opt/ci-cd-files/
