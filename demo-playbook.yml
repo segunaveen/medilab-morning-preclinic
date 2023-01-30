@@ -1,0 +1,16 @@
+- name: demo-playbook
+  hosts: dev
+  # this need to configure when we dont want to execute the 
+  # comands as root user on the remote clients
+  become: 'yes'
+  #this need to configure when password need to supply
+  become_user: ansible-client
+  tasks:
+   # - name: create the directory on clients machine
+   #   shell: echo admin | sudo -S mkdir /opt/ci-cd-files
+
+    - name: change the directory permissions
+      shell: echo admin | sudo -S chmod 777 /opt/ci-cd-files
+    
+    - name: copy the files from ansible server to clients machine
+      copy: src=/opt/ dest=/opt/ci-cd-files
